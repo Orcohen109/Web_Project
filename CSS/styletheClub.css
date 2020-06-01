@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+*{
+    font-family: "Alef Hebrew",
+        “Helvetica Neue”,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+* {
+
+}
+
+.headerp {
+    width: 100%;
+    height: 200px;
+}
+
+#nav-bar {
+    top: 0;
+    z-index: 10;
+    color: azure;
+    background-image: linear-gradient(to right, #c2b280, #fffafa);
+    font-weight: bold;!important;
+}
+
+/*קלאס אשר מייצר הבלטה על הנאב-בר כאשר העכבר מסומן עליו*/
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    font-size: 1.2em;
+    background-color: red;  /*Sets the text hover color on navbar*/
+    text-decoration: underline;
+}
+
+.navbar {
+    padding: 0 !important;
+
+}
+
+.navbar-brand {
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.navbar-nav li {
+
+    padding: 0 5px;
+}
+
+.navbar-nav li a {
+
+    float: right;
+
+}
+
+.fa-bars {
+    color: #000000;
+    !important;
+    font-size: 200px;
+    !important;
+}
+
+.navbar-toggler {
+    outline: none;
+    !important;
+
+}
+
+
+
+
+/*--------------*/
+.test {
+    background-image: url(../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    padding-top: 2%;
+
+}
+
+main {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    opacity: 0.90;
+    overflow:auto;
+    font-family: myFirstFont;
+}
+.pic{
+    height: 200px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1%;
+
+}
+.description{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 3%;
+
+}
+
+.videop{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+.video{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:600px;
+    height: 200px;
+}
+
+.video:hover{
+    border-color: black;
+}
+
+
+.tabledesign{
+    background-color: f0eee1;
+    border-color: black;!important;
+}
+
+
+
+
+#playersimg{
+    height:40px;
+    width:40px;
+    margin-left:10px;
+}
+
+#playerstitle{
+    text-align: right;
+    margin-right: 9%;
+    margin-top: 20px;
+
+}
+
+#playerstitle1{
+    text-align: right;
+
+    margin-top: 60px;
+
+}
+
+#playerstitle2{
+    text-align: right;
+
+    margin-top: 60px;
+
+}
+.newsletter{
+    border:none 2px green;
+    text-align: center;
+    background: #29ab87;
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+
+}
+.newsletter:hover{
+    color:#0B0080;
+}
+
+#myInput{
+
+    float: right;
+    margin-right: 9%;
+    direction: rtl;
+    background-color:#f0eee1;
+}
+::placeholder{
+    color:black;
+}
+
+
+#ajax2020tables1{
+    margin-left: 100px;
+    max-width: 700px;
+    text-align: right;
+    direction: rtl;
+    margin-top: 20px;
+    background-color: #f0eee1;
+    border-width: solid;
+
+}
+
+#ajax2020tables{
+    margin-left: 100px;
+    max-width: 700px;
+    text-align: right;
+    direction: rtl;
+    margin-top: 20px;
+    background-color: #f0eee1;
+    border-width: solid;
+
+}
+
+
+
+/*--------------tabs links----------------*/
+
+.wapper{
+    margin-top: 5%;
+}
+.tab {
+    float: right;
+    border: 1px solid #ccc;
+    background-color: #D50032;
+    width: 25%;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: right;
+    direction: rtl;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #100c08;
+    border-color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #100c08;
+    border-color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    width: 70%;
+    direction: rtl;
+    text-align: right;
+    background-color: #f0eee1;
+
+}
+
+#myInput{
+
+    float: right;
+    margin-right: 9%;
+    direction: rtl;
+    background-color:#f0eee1;
+}
+::placeholder{
+    color:black;
+}
+
+
+#ajax2020tables1{
+    margin-left: 100px;
+    max-width: 700px;
+    text-align: right;
+    direction: rtl;
+    margin-top: 20px;
+    background-color: #f0eee1;
+    border-width: solid;
+
+}
+
+#ajax2020tables{
+    margin-left: 100px;
+    max-width: 700px;
+    text-align: right;
+    direction: rtl;
+    margin-top: 20px;
+    background-color: #f0eee1;
+    border-width: solid;
+
+}
+/*-------------------footer --------------*/
+
+.hrborder{
+    border-top: 2px solid #8c8b8b;
+    clear: both;
+}
+
+
+footer {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    padding-top: 15px;
+    opacity: 0.9;
+
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.95;
+    color: black;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #e4405f;
+    color: white;
+}

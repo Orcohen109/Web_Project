@@ -1,0 +1,401 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+*{
+    font-family: "Alef Hebrew",
+        “Helvetica Neue”,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right,darkred,#cfcfc4);
+}
+
+.headerp{
+    width: 100%;
+    height:200px;
+}
+
+#nav-bar{
+    top: 0;
+    z-index: 10;
+    color:azure;
+    background-image: linear-gradient(to right,#c2b280,#fffafa);
+    font-weight: bold;!important;
+    /*position:sticky;*/
+}
+/*שלושת הקלאסים מתחת מייצרים הבלטה על הנאב-בר כאשר העכבר מסומן עליו*/
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a {
+    color: white;  !important;
+
+    font-size: 1.2em;
+}
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: red;  /*Sets the text hover color on navbar*/
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+/*--------------*/
+.navbar{
+    padding: 0 !important;
+
+}
+.navbar-brand{
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+}
+.navbar-nav li{
+
+    padding: 0 5px;
+}
+.navbar-nav li a{
+
+    float: right;
+
+}
+.fa-bars{
+    color:#000000;!important;
+    font-size: 200px;!important;
+}
+.navbar-toggler {
+    outline: none; !important;
+
+}
+/*-----main---------*/
+.test {
+    background-image: url(../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 2%;
+
+}
+
+main {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    opacity: 0.90;
+    overflow:auto;
+}
+.titlep{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+.wapper{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    direction: rtl;
+    text-align: right;
+
+
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;  
+}
+
+.box .imgBx {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 0;
+}
+
+.box .content {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box:hover .content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box .content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+#ticketbox{
+    font-size: 18px;
+}
+
+#ticketboxbutton{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+h3{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*-------------------footer --------------*/
+
+.hrborder{
+    border-top: 2px solid #8c8b8b;
+    clear: both;
+}
+
+
+footer {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    padding-top: 15px;
+    opacity: 0.9;
+
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.95;
+    color: black;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #e4405f;
+    color: white;
+}
+
+
+/*-------------Travel guide-----------*/
+* {
+    box-sizing: border-box;
+}
+
+.container_travel_guide {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: cursive;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tab_triger {}
+
+.tab_triger ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.tab_triger ul li {}
+
+.tab_triger ul li label {
+    position: relative;
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+    min-width: 100px;
+    background: #e6e6e6;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.tab_triger ul li:nth-child(1) label {
+    float: right;
+    background: #f0f0f0;
+}
+
+.tab_triger ul li:nth-child(2) label {
+    background: #e6e6e6;
+}
+
+.tab_triger ul li:nth-child(3) label {
+    background: #d9d9d9;
+}
+
+.tab_triger ul li:nth-child(4) label {
+    background: #ccc;
+}
+
+.tab_container_warp {}
+
+.tab_container_warp input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    z-index: -100;
+    top: -10000px;
+}
+
+
+.tab_container_warp input:checked + .tab_content_box {
+    display: block;
+}
+
+.tab_content_box {
+    background: #f0f0f0;
+    padding: 20px;
+    display: block;
+    display: none;
+}
+
+
+.tab_content_box:nth-of-type(1) {
+    background: #f0f0f0;
+    /*background-image: url("images/navbar2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-blend-mode: overlay;*/
+
+}
+
+.tab_content_box:nth-of-type(2) {
+    background: #e6e6e6;
+    /* background-image: url("images/navbar2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-blend-mode: overlay;*/
+
+}
+
+.tab_content_box:nth-of-type(3) {
+    background: #d9d9d9;
+    /*background-image: url("images/navbar2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-blend-mode: overlay;*/
+}
+
+.tab_content_box:nth-of-type(4) {
+    background: #ccc;
+    /* background-image: url("images/navbar2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-blend-mode: overlay;*/
+}
+
+
+.tab_content_box h2 {
+    text-align: right;
+    direction: rtl;
+    margin: 50px 0 10px 0;
+}
+
+.tab_content_box p {
+    text-align: right;
+    direction: rtl;
+}

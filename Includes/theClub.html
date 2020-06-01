@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Required meta tags
+-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- connect to css file -->
+        <link rel="stylesheet" href="../CSS/styletheClub.css">
+
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Ajax Amsterdam fans website</title>
+    </head>
+
+    <body>
+
+        <header id="nav-bar">
+            <img src="../images/navbarbackg.jpg" class="headerp">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <!-- navbar-nav mx-auto -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="העמוד בשיפוצים">התחברות</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="theClub.html">המועדון</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheTravelGuide.html">המדריך למטייל</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">עמוד הבית</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+                <!-------------- section ----------------------->
+                <div class="test">
+                    <main>
+                        <div class="wapper">
+                            <p class="newsletter" onclick="location.href='RegisterForm.html';">על מנת להישאר מעודכנים, לחצו כאן להרשמה לניוזלייטר שלנו</p>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'Ajax2020')" id="defaultOpen">אייאקס 2020</button>
+                                <button class="tablinks" onclick="openCity(event, 'History')" id="defaultOpen">ההיסטוריה שלנו</button>
+                                <button class="tablinks" onclick="openCity(event, 'JewishConnection')">הקשר עם הקהילה היהודית</button>
+                                <button class="tablinks" onclick="openCity(event, 'Academic')">האקדמיה של אייאקס</button>
+                            </div>
+
+                            <div id="Ajax2020" class="tabcontent">
+
+                                <div class="tablediv1">
+                                    <table class="table table-responsive table-hover tabledesign" style="padding-right: 50px;" id="ajax2020tables1">
+                                        <h3 id=playerstitle> סגל הקבוצה לעונת 2019/2020</h3>
+                                        <input type="text" id="myInput" onkeyup="serchBarFunction()" placeholder="חפש שחקן לפי שמו..." title="Type in a name"><br>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">מספר</th>
+                                                <th scope="col">שם שחקן</th>
+                                                <th scope="col">עמדה</th>
+                                                <th scope="col">מס' הופעות</th>
+                                                <th scope="col">מס' שערים</th>
+                                                <th scope="col">מס' בישולים</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><img id=playersimg src="../images/BrunoVarela.png">ברונו וארלה
+                                                </td>
+                                                <td>שוער</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>24</td>
+                                                <td><img id=playersimg src="../images/AndreOnana.jpg "> אנדרי אוננה</td>
+                                                <td>שוער</td>
+                                                <td>30</td>
+                                                <td>0</td>
+                                                <td>0</td>
+
+                                            </tr>  
+                                            <td>33</td>
+                                            <td><img id=playersimg src="../images/DominikKotarski.png">דומיניק קוטסארקי
+                                            <td>שוער</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+
+
+                                            <tr>
+                                                <td>3</td>
+                                                <td><img id=playersimg src="../images/JoelVeltman.png"> יואל ולטמן</td>
+                                                <td>מגן</td>
+                                                <td>27</td>
+                                                <td>3</td>
+                                                <td>0</td>
+
+                                            <tr>
+                                                <td>4</td>
+                                                <td><img id=playersimg src="../images/EdsonAlvarez.png">אדסון אלווארז
+                                                <td>מגן</td>
+                                                <td>17</td>
+                                                <td>2</td>
+                                                <td>0</td>
+
+                                            <tr>
+                                                <td>5</td>
+                                                <td><img id=playersimg src="../images/KikPierie.png">קיקי פיירי
+                                                <td>מגן</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+
+                                            <tr>     
+                                                <td>12</td>
+                                                <td><img id=playersimg src="../images/NoussairMazraoui.png">נוסיר מזרוואי</td>
+                                                <td>מגן</td>
+                                                <td>18</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>17</td>
+                                                <td><img id=playersimg src="../images/DaleyBlind.png"> דיילי בלינד</td>
+                                                <td>מגן</td>
+                                                <td>26</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>21</td>
+                                                <td><img id=playersimg src="../images/LisandroMartinez.png">ליסנדרו מרטינז
+                                                <td>מגן</td>
+                                                <td>29</td>
+                                                <td>2</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>28</td>
+                                                <td><img id=playersimg src="../images/SerginoDest.jpg"> סרג'יניו דסט</td>
+                                                <td>מגן</td>
+                                                <td>24</td>
+                                                <td>2</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>31</td>
+                                                <td><img id=playersimg src="../images/NicoTagliafico.jpg"> ניקולס טגליאפיקו</td>
+                                                <td>מגן</td>
+                                                <td>27</td>
+                                                <td>5</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>6</td>
+                                                <td><img id=playersimg src="../images/DonnyvandeBeek.png">דוני ואן דה ביק
+                                                <td>קשר</td>
+                                                <td>26</td>
+                                                <td>8</td>
+                                                <td>6</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>8</td>
+                                                <td><img id=playersimg src="../images/Carel%20Eiting.png">קרל איטינג
+                                                <td>קשר</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>15</td>
+                                                <td><img id=playersimg src="../images/SiemdeJong.png">סיאם דה יונג
+                                                <td>קשר</td>
+                                                <td>7</td>
+                                                <td>0</td>
+                                                <td>1</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>18</td>
+                                                <td><img id=playersimg src="../images/RazvanMarin.png">רזואן מארין
+                                                <td>קשר</td>
+                                                <td>15</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>19</td>
+                                                <td><img id=playersimg src="../images/ZakariaLabyad.png"> זאכריא לביאד
+                                                <td>קשר</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>22</td>
+                                                <td><img id=playersimg src="../images/HakimZiyech.png"> חכים זיאש
+                                                <td>קשר</td>
+                                                <td>28</td>
+                                                <td>9</td>
+                                                <td>5</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>26</td>
+                                                <td><img id=playersimg src="../images/JurgenEkkelenkamp.png"> יורגן אלקמנקאפ
+                                                <td>קשר</td>
+                                                <td>3</td>
+                                                <td>2</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>27</td>
+                                                <td><img id=playersimg src="../images/NoaLang.png"> נואה לנג
+                                                <td>קשר</td>
+                                                <td>9</td>
+                                                <td>4</td>
+                                                <td>2</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>29</td>
+                                                <td><img id=playersimg src="../images/RyanGravenberch.png"> ראיין גרוונבאך
+                                                <td>קשר</td>
+                                                <td>5</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>7</td>
+                                                <td><img id=playersimg src="../images/DavidNeres.jpg"> דויד נרס
+                                                <td>חלוץ</td>
+                                                <td>20</td>
+                                                <td>6</td>
+                                                <td>1</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>9</td>
+                                                <td><img id=playersimg src="../images/KlaasJanHuntelaar.png"> קלאס יאן הונטלר
+                                                <td>חלוץ</td>
+                                                <td>22</td>
+                                                <td>9</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>7</td>
+                                                <td><img id=playersimg src="../images/DusanTadic.png"> דושאן טאדיץ'
+                                                <td>חלוץ</td>
+                                                <td>30</td>
+                                                <td>11</td>
+                                                <td>5</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>11</td>
+                                                <td><img id=playersimg src="../images//QuincyPromes.png"> קווינסי פרומס
+                                                <td>חלוץ</td>
+                                                <td>11</td>
+                                                <td>14</td>
+                                                <td>2</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>23</td>
+                                                <td><img id=playersimg src="../images//LassinaTraore.png"> לאסינה טראורה
+                                                <td>חלוץ</td>
+                                                <td>4</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                            <tr>     
+                                                <td>23</td>
+                                                <td><img id=playersimg src="../images//HassaneBande.png"> חסן באנדה
+                                                <td>חלוץ</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+
+
+                                    <table class=" table table-responsive table-hover tabledesign" style="padding-right: 20px;">
+                                        <h3 id=playerstitle1> טבלת הליגה ההולנדית</h3>
+                                        <thead>
+                                            <tr>    
+                                                <th scope="col"> מקום בטבלה</th>
+                                                <th scope="col">קבוצה</th>
+                                                <th scope="col">משחקים</th>
+                                                <th scope="col">ניצחונות</th>
+                                                <th scope="col">הפסדים</th>
+                                                <th scope="col">מאזן שערים</th>
+                                                <th scope="col">נקודות</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td >1 </td>
+                                                <td><img id=playersimg src="../images/ajaxlogo.png">אייאקס אמסטדם
+                                                <td>18</td>
+                                                <td>14</td>
+                                                <td>2</td>
+                                                <td>42</td>
+                                                <td>44</td>
+
+                                            <tr>
+                                                <td >2 </td>
+                                                <td><img id=playersimg src="../images/alkmarlogo.png">אלקמאר
+                                                <td>18</td>
+                                                <td>13</td>
+                                                <td>2</td>
+                                                <td>28</td>
+                                                <td>41</td>
+
+                                            <tr>
+                                                <td >3 </td>
+                                                <td><img id=playersimg src="../images/psvlogo.png">פ.ס.וו איינדהובן
+                                                <td>18</td>
+                                                <td>10</td>
+                                                <td>4</td>
+                                                <td>19</td>
+                                                <td>34</td>
+
+                                            <tr>
+                                                <td >4 </td>
+                                                <td><img id=playersimg src="../images/vilemlogo.png">וילם II
+                                                <td>18</td>
+                                                <td>10</td>
+                                                <td>3</td>
+                                                <td>5</td>
+                                                <td>33</td>
+
+                                            <tr>
+                                                <td >5 </td>
+                                                <td><img id=playersimg src="../images/feynordlogo.png">פיינורד
+                                                <td>18</td>
+                                                <td>8</td>
+                                                <td>7</td>
+                                                <td>5</td>
+                                                <td>31</td>
+
+                                            <tr>
+                                                <td >6 </td>
+                                                <td><img id=playersimg src="../images/viteselogo.png">ויטסה ארנהיים
+                                                <td>18</td>
+                                                <td>9</td>
+                                                <td>3</td>
+                                                <td>8</td>
+                                                <td>30</td>
+
+                                            <tr>
+                                                <td >7 </td>
+                                                <td><img id=playersimg src="../images/urterchtlogo.png">אורטרכט
+                                                <td>18</td>
+                                                <td>9</td>
+                                                <td>2</td>
+                                                <td>7</td>
+                                                <td>28</td>
+
+                                            <tr>
+                                                <td >8 </td>
+                                                <td><img id=playersimg src="../images/Heerenveenlogo.png">הירנביין
+                                                <td>18</td>
+                                                <td>7</td>
+                                                <td>7</td>
+                                                <td>5</td>
+                                                <td>26</td>
+
+                                            <tr>
+                                                <td >9 </td>
+                                                <td><img id=playersimg src="../images/heracleslogo.png">הראקלס
+                                                <td>18</td>
+                                                <td>7</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                                <td>26</td>
+
+                                            <tr>
+                                                <td >10 </td>
+                                                <td><img id=playersimg src="../images/groningenlogo.png">כרוניגן
+                                                <td>18</td>
+                                                <td>7</td>
+                                                <td>4</td>
+                                                <td>3</td>
+                                                <td>25</td>    
+
+                                            <tr>
+                                                <td >11 </td>
+                                                <td><img id=playersimg src="../images/spartalogo.png">ספרטה רוטרדם
+                                                <td>18</td>
+                                                <td>6</td>
+                                                <td>5</td>
+                                                <td>3-</td>
+                                                <td>23</td>
+
+                                            <tr>
+                                                <td >12 </td>
+                                                <td><img id=playersimg src="../images/twentelogo.png">טוונטה
+                                                <td>18</td>
+                                                <td>5</td>
+                                                <td>4</td>
+                                                <td>11-</td>
+                                                <td>19</td>
+
+                                            <tr>
+                                                <td >13 </td>
+                                                <td><img id=playersimg src="../images/spartalogo.png">פורטונה סיטארד
+                                                <td>18</td>
+                                                <td>5</td>
+                                                <td>4</td>
+                                                <td>19-</td>
+                                                <td>19</td>
+
+                                            <tr>
+                                                <td >14 </td>
+                                                <td><img id=playersimg src="../images/amenlogo.png">אמן
+                                                <td>18</td>
+                                                <td>5</td>
+                                                <td>3</td>
+                                                <td>14-</td>
+                                                <td>18</td> 
+
+                                            <tr>
+                                                <td >15 </td>
+                                                <td><img id=playersimg src="../images/zwelelogo.png">זוולה
+                                                <td>18</td>
+                                                <td>5</td>
+                                                <td>1</td>
+                                                <td>27-</td>
+                                                <td>15</td>
+
+                                            <tr>
+                                                <td >16 </td>
+                                                <td><img id=playersimg src="../images/venlologo.png">וונלו
+                                                <td>18</td>
+                                                <td>5</td>
+                                                <td>0</td>
+                                                <td>18-</td>
+                                                <td>13</td>
+
+                                            <tr>
+                                                <td >17 </td>
+                                                <td><img id=playersimg src="../images/denhuglogo.png">דן האג
+                                                <td>18</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>18-</td>
+                                                <td>13</td>
+
+                                            <tr>
+                                                <td >18 </td>
+                                                <td><img id=playersimg src="../images/volaviklogo.png">וולוויק
+                                                <td>18</td>
+                                                <td>3</td>
+                                                <td>2</td>
+                                                <td>21-</td>
+                                                <td>11</td>        
+                                        </tbody>
+
+                                    </table>
+
+                                    <table class="table table-responsive table-hover tabledesign">
+                                        <h3 id=playerstitle2>משחקי הקבוצה</h3>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">תאריך המשחק</th>
+                                                <th scope="col">שעת התחלה</th>
+                                                <th scope="col">איצטדיון</th>
+                                                <th scope="col">יריבה</th>
+                                                <th scope="col">שופט</th>
+                                                <th scope="col">מפעל</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tr>
+                                            <td>18/01/2020</td>
+                                            <td>19:00</td>
+                                            <td>אמסטרדם ארנה</td>
+                                            <td>ויטסה ארנהיים</td>
+                                            <td>מתאו להוז</td>
+                                            <td>ליגת הולנדית</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25/01/2020</td>
+                                            <td>20:00</td>
+                                            <td>פיליפס ארנה</td>
+                                            <td>פסו איינדהובן</td>
+                                            <td>צ'ונייט שאקיר</td>
+                                            <td>גביע הולנדי</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/02/2020</td>
+                                            <td>21:00</td>
+                                            <td>אמסטרדם ארנה</td>
+                                            <td>ספרטה רוטרדם</td>
+                                            <td>דמיר סקומינה</td>
+                                            <td>ליגה הונלדית</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/02/2020</td>
+                                            <td>22:00</td>
+                                            <td>פיינורד ארנה</td>
+                                            <td>פיינורד</td>
+                                            <td>לירן ליאני</td>
+                                            <td>גביע הולנדי</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/02/2020</td>
+                                            <td>19:00</td>
+                                            <td>אמסטרדם ארנה</td>
+                                            <td>טוונטה</td>
+                                            <td> קלמונט טורפאן</td>
+                                            <td>ליגה הולנדית</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22/02/2020</td>
+                                            <td>20:00</td>
+                                            <td>קאמפ נואו</td>
+                                            <td>ברצלונה</td>
+                                            <td>אוראל גרינפלד</td>
+                                            <td>ליגת האלופות</td>
+                                        </tr>
+                                    </table>      
+                                </div>
+                            </div>
+
+                            <div id="History" class="tabcontent">
+                                <h3>ההיסטוריה שלנו</h3>
+                                <p>מועדון הכדורגל האמסטרדמי אייאקס (בהולנדית: Amsterdamsche Football Club Ajax) הידוע בקיצור כאייאקס אמסטרדם (בהולנדית: Ajax Amsterdam) או פשוט כאייאקס, הוא מועדון כדורגל מהעיר אמסטרדם שבהולנד. קבוצת הכדורגל של אייאקס היא הקבוצה המצליחה בהולנד עם 34 תוארי אליפות ו-19 גביעים והיא אחת משלוש הקבוצות היחידות בהולנד (יחד עם פ.ס.וו. איינדהובן ופיינורד) שמעולם לא ירדו לליגת המשנה.</p>
+
+                                <img class="pic center" title="מועדון הכדורגל אייקס אמסטרדם מחזיק ב34 תארי אליפות" src="../images/ourhistorypic1.jpg">
+
+                                <figcaption class="description"> מועדון הכדורגל אייקס אמסטרדם </figcaption>
+
+                                <p>קבוצת הכדורגל של אייאקס נוסדה בשנת 1893, בידי פלוריס סטמפל ומקור שמה הוא הגיבור המיתולוגי איאס. בשנת 1896 סטמפל נאלץ לסגור אותה, עקב ריבוי מועדוני כדורגל באמסטרדם. הקבוצה חזרה לפעילות בשנת 1900.
+
+                                    בשנות ה-70 של המאה ה-20 הייתה קבוצת אייאקס לשם דבר באירופה, כשזכתה בשלושה גביעים רצופים בעזרת שיטת הכדורגל הטוטאלי שפותחה על ידי מאמנה באותה תקופה, רינוס מיכלס.
+
+                                    בשנת 1972 זכתה אייקס בטרבל (אליפות, גביע וגביע האלופות) והיא אחת משבע קבוצות בלבד באירופה שעשו זאת יחד עם ברצלונה, אינטר מילאנו, סלטיק, פ.ס.וו. איינדהובן, באיירן מינכן ומנצ'סטר יונייטד. אייאקס היא גם אחת מתוך ארבע קבוצות באירופה שזכו בכל תואר אפשרי למועדון אירופאי יחד עם יובנטוס, באיירן מינכן ומנצ'סטר יונייטד.
+
+                                    בנוסף אייקס זכתה בכל שלוש התחרויות העיקריות של אופ"א (גביע אופ"א, גביע מחזיקות הגביע וגביע האלופות) והיא אחת מחמש הקבוצות היחידות שעשו זאת (בנוסף ל- יובנטוס, צ'לסי, מנצ'סטר יונייטד ובאיירן מינכן) ואחת מארבע הקבוצות שזכו בכל תואר אפשרי למועדון אירופאי. כמו כן, איאקס היא אחת משלוש הקבוצות היחידות בהיסטוריה,[1] אשר זכו בגביע ביניבשתי באותה שנה בה זכו בטרבל אירופי. הישג זה נרשם בעונת 1971/1972.</p>
+
+                                <img class="pic center" title="זכיה בתואר האלופות" src="../images/ourhistorypic2.jpg">
+
+                                <figcaption class="description"> זכיה היסטורית בליגת האלופות </figcaption>
+
+                                <p>הקבוצה נקראת על שם הגיבור המיתולוגי איאס, שם שמתועתק כ-Ajax ולכן רבים מבטאים אותו כ"אייאקס". גיבור זה חבוש בקסדה מופיע בסמל המועדון.
+
+                                    אייאקס משחקת באצטדיון יוהאן קרויף ארנה. הקבוצה נחשבת לקבוצה "יהודית". היסטורית זה התפתח, ככל הנראה, בגלל קרבת האצטדיון המקורי לשכונה היהודית באמסטרדם, ומשום שחלק משחקניה והנהלתה, כמו גם מספר יחסית גדול של אוהדים, היו יהודים.[2] עם הזמן אוהדיה הקנאים אימצו לעצמם "זהות" זו - הם מכנים עצמם יהודים גם אם אינם יהודים, ומתעטרים בסמלי מגן דוד ודגלי ישראל. מסיבה זו, שירי נאצה רבים וקריאות גנאי של אוהדי הקבוצות היריבות, ובייחוד פיינורד, קשורים באנטישמיות ובהתייחסות שלילית לשואה.</p>
+
+                                <img class="pic center" title="איצטדיונה של אייאקס אמסטרדם" src="../images/ourhistorypic4.jpg">
+
+                                <figcaption class="description"> איצטדיונה הביתי של אייאקס אמסטרדם </figcaption>
+                            </div>
+
+                            <div id="JewishConnection" class="tabcontent">
+                                <h3>הקשר עם הקהילה היהודית</h3>
+                                <p>אייאקס אמסטרדם היא קבוצת כדורגל שמזוהה עם מגן דוד, דגל ישראל וסמלים יהודיים. הסיבה לכך היא לא רק היסטורית או מקומית, אלא קשורה גם למערכת היחסים עם אוהדי הקבוצות היריבות. קבלו את הסיפור המלא
+
+                                    כל מי שהזמין בחייו טיסות לאמסטרדם כדי לראות כדורגל ודאי שם לב לדגלי ישראל ולמגני דוד ביציעים של אוהדי הקבוצה המקומית. אייאקס אמסטרדם מזוהה עם יהודים לא פחות מאשר קבוצות ישראליות בתל אביב, חיפה וירושלים, ומסתבר שיש לכך שורשים היסטוריים עמוקים.
+
+                                    <img class="pic center"  src="../images/ourhistorypic5.jpg">
+
+                                    <figcaption class="description"> אוהדי אייאקס אמסטרדם ידועים באהבתם לישראל</figcaption>
+
+                                    מועדון הכדורגל של אמסטרדם נוסד בשנת 1893, בידי אדם בשם פלוריס סטמפל. מקור השם "אייאקס" הוא הגיבור המיתולוגי "איאס", שלפי המסופר נחשב לאמיץ שבגיבורי היוונים שניצבו מול חומות טרויה למעט אכילס. הבעיה היא שהמיתולוגיה לא הספיקה לקבוצת הכדורגל החביבה מבירת הולנד, כי בשנת 1896 נאלץ סטמפל לסגור אותה. ריבוי מועדוני הכדורגל בעיר פגע באייאקס והיא חזרה להתקיים רק בשנת 1900.
+
+                                    אבל מה זה קשור ליהודים?
+
+                                    אצטדיון ברובע היהודי והקנטות מצד אוהדי היריבות
+
+                                    אצטדיון הכדורגל המקורי של אייאקס שכן בקרבת הרובע היהודי של אמסטרדם. בנוסף, חלק משחקניה וחברי ההנהלה היו יהודים וכך גם מספר יחסית גדול של אוהדים. עם הזמן החל הפולקלור המקומי לאמץ את סמלי המגן דוד ולאחר מכן את דגל ישראל, כדי להביע הזדהות עם הקבוצה. האוהדים הקנאים של אייאקס אמסטרדם אימצו לעצמם את הזהות היהודית – גם אם הם אינם יהודים.
+
+                                    לאוהדי הקבוצות היריבות של אייאקס אמסטרדם יש תפקיד לא פחות משמעותי בהתהוותה כקבוצה יהודית. ראשית, הם לא מגלים סימפטיה להיסטוריה היהודית ואף משתמשים בה כדי להקניט את האוהדים של אייאקס. חלק ניכר משירי האוהדים של פיינורד, למשל, קשורים באנטישמיות ובהתייחסות שלילית לשואה. זה ניכר גם במשחקי החוץ ומלווה את השחקנים של אייאקס לכל מקום במדינה.
+
+                                    שנית, ההקנטות של אוהדי הקבוצות היריבות תורמות באופן אירוני דווקא לשימור של הסמלים היהודיים. הם הופכים אותם מאפיזודה חולפת ואנקדוטה היסטורית, למאפיין בולט שסוחף אחריו גם אוהדים חדשים של אייאקס.
+
+                                    <img class="pic center"  src="../images/ourhistorypic11.jpg">
+
+                                    <figcaption class="description"> אוהדות אייקס עם דגל ישראל </figcaption>
+
+                                    למרות שאייאקס כבר מזמן לא משחקת באצטדיון המקורי (היא עברה לאמסטרדם ארנה ב-1996), עד היום מוקדש חלק ניכר מהתפאורה ביציע לצבעים כחול ולבן.
+
+                                    מערכת היחסים בין אמסטרדם, הולנד והיהודים
+
+                                    מערכת היחסים המיוחדת בין אמסטרדם ליהודים לא מבוססת רק על קבוצת הכדורגל של אייאקס. הסובלנות שמאפיינת את העיר עודדה יהודים לברוח אליה אחרי גירוש ספרד בשנת 1942 ולהגיע אליה בעקבות הפרעות בפורטוגל. עם הזמן התפתחה קהילה יהודית ענפה באמסטרדם, שהגיעה בשיאה לכמות של מעל 120 אלף תושבים.
+
+                                    חלק ניכר מיהדות אמסטרדם הושמד לאחר שהנאצים השתלטו על העיר. עם זאת, עד היום מהווה הרובע היהודי מוקד משיכה תיירותי וסמל בולט של העיר. הרובע היהודי כולל את בית אנה פראנק, את בית הכנסת העתיק ביותר בהולנד ועוד שורה ארוכה של אטרקציות.
+
+                                    <img class="pic center"  src="../images/ourhistorypic12.jpg">
+
+                                    <figcaption class="description">Ajax Jewish </figcaption>
+
+                                    כל קהילה יהודית שהגיעה לאמסטרדם תרמה בצורה אחרת להתפתחות התרבותית, החברתית והכלכלית של הולנד. בתמורה, ממשלות הולנד העניקו לקהילות האלה חופש דת יוצא דופן. מקהילת היהדות הפורטוגלית יצאו למשל רבנים, מלומדים, הוגי דעות, בנקאים ואמנים. כמו כן, כיום חיים בהולנד כולה כ-25 אלף יהודים, שמתוכם 15-20 אלף באמסטרדם.
+
+                                    לסיכום, ההיסטוריה מאחורי קבוצת הכדורגל אייאקס אמסטרדם מלמדת על הקשר החזק בין ספורט, חברה ותרבות. מה שהתחיל כעניין חסר משמעות של בניית אצטדיון בסמוך לרובע של קהילה מסוימת, הפך עם השנים לאחד הסיפורים המפורסמים ביותר בכדורגל העולמי</p>
+                                <p class="videop">
+                                    מצורף קטע וידיאו של אוהדי אייקס אמסטרדם שרים את הבה נגילה באיצטדיונם הביתי                            
+                                </p>
+
+                                <video  class="video" controls>
+                                    <source src="../videoandaudio/Hava%20Nagila%20(Ajax).mp4" type="video/mp4">
+
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <div id="Academic" class="tabcontent">
+                                <h3>האקדמיה של אייאקס</h3>
+                                <p>רובין מולר ואן מופס היה אחד מהילדים בני המזל שזכו להתקבל לבית הספר היוקרתי לכדורגל של אייאקס. בית הספר קרוי "דה טוקומסט אקדמי" (De Toekomst Academy), שפירושו "אקדמיית העתיד", והוא ממוקם בסמוך לאיצטדיון, במתחם מפואר ומצויד היטב: שבעה מגרשי אימון, איצטדיון קטן שיכול להכיל אלף צופים, חדרי כושר והלבשה, חדר אוכל וכיתות לימוד.</p>
+
+                                <img class="pic center" src="../images/ourhistorypic8.jpg">
+
+                                <figcaption class="description"> איצטדיונה הביתי של אייאקס                        רובין מולר ואן מופס, המתאמן ומשחק כבר 11 שנים במסגרות הצעירים של אייאקס, אותר על ידי ציידי הכשרונות של המועדון
+                                </figcaption>
+
+                                <p>
+                                    האיצטדיון של אייאקס הוא פסגת השאיפות של בני המזל והכישרון הבאים בשערי האקדמיה, ובבית הספר הם עושים את הדרך הארוכה להגשמתן.
+                                    כשהיה בן שבע ביקש רובין מהוריו גרביים של אייאקס כמתנת יום הולדת. שנתיים אחר כך כבר קיבל תיק מלא גרביים ותלבושת בצבעים אדום־לבן. מרוב התרגשות, הוא מספר, "ישנתי עם התיק קרוב אלי, מתחת למיטה".
+                                    רובין אותר על ידי ציידי הכישרונות של אייאקס, המכונים "סיירים" (scouters), רבים מהם שחקני עבר בקבוצה, היוצאים למצוא את כישרונות העתיד בעקבות מכתבי ילדים וממליצים, למשל מורים לספורט. הסיירים הגיעו למשחק חובבים שנערך בשכונה של רובין וראו אותו בפעולה. מכיוון שעשה עליהם רושם של  בעל כישרון, הזמינו אותו למבדקים במועדון, ומאז, כבר 11 שנים, הוא מתאמן ומשחק במסגרות הצעירים של הקבוצה.
+                                    כיום רובין הוא שחקן מקצועני בקבוצה השנייה של אייאקס, Ajax 2. הוא יוכל לשחק בה במשך שנתיים לכל היותר. אם יצטיין, יזכה לעלות לקבוצה הראשונה. אם לא, יחפש את עתידו מחוץ לאייאקס.בני ה־8־12 שאותרו על ידי ציידי הכישרונות מגיעים שלוש פעמים בשבוע לאחר שעות הלימודים לאימון, בדרך כלל בליווי הוריהם. פעם בשבוע מתקיים משחק כמו־מקצועני. מסגרת הכשרת הכדורגלנים הצעירים נתפסת גם ככר ההשבחה של הכדורגל ההולנדי. למטרה זו, וכמובן כעתודה למועדון, נבנתה באייאקס תוכנית עבודה ייחודית, ומאמנים רבים מכל העולם באים ללמוד אותה, בתקווה שיוכלו ליישם אותה בארצותיהם. התוכנית נקראת TIPS, ויש בה ארבעה מרכיבים – טכניקה (T), ראיית משחק (I), אישיות (P) ומהירות (S), החיוניים ביותר להכשרת כדורגלן מקצועני.
+                                </p>
+
+                                <img class="pic center" src="../images/ourhistorypic9.jpg">
+
+                                <figcaption class="description"> האקדמיה של אייקס, מגרשי האימונים 
+                                </figcaption>
+
+                                <p>
+                                    <b><u>כוכבים רק על המגרש</u></b><br>
+                                    חשיבות רבה מיוחסת להישגים לימודיים. אחד ממנהלי התוכנית, יור רונר, מספר שהוא בקשר עם יותר מחמישים בתי ספר באמסטרדם ובסביבתה. "חשוב שהילדים לא יזניחו את לימודיהם הכלליים, גם כי לא לעד יהיו שחקני כדורגל. היום השעיתי תלמיד ליומיים מפני שלא היה טוב בלימודים", הוא אומר. הישגי הילדים באימונים נרשמים ב"דרכון אישי" מיוחד, שאותו הם נושאים בגאווה. באמצע השנה נעשית הערכה על התקדמותם באימונים ובלימודים הכלליים, והילדים    מקבלים משוב על ביצועיהם. בסוף כל שנה מתבצע ניפוי, ומי מהילדים שלא עמד בדרישות התוכנית עוזב את האקדמיה.
+                                    מגיל 12 עד 16 מתאמנים הנערים כבר ארבע פעמים בשבוע, ומשחקים פעם בשבוע. מיניבוסים מיוחדים אוספים את הילדים מבתי הספר שלהם אחר הצהריים. הם אוכלים ארוחת צהריים בצוותא, ואחר כך לומדים ומכינים שיעורים בסיוע מורים שעובדים בעבור אייאקס. אימון הכדורגל נמשך שעתיים, עד לפנות ערב. אז מתכנסים הילדים שוב לארוחת ערב משותפת וללימודים נוספים. בערב הם מתפזרים לבתיהם.
+                                    מגיל 16 כבר נקראים הנערים "נבחרת 1A". לשורותיהם מצטרפים לעתים נערים ממדינות אחרות. אלה מאותרים על ידי 25 סיירים שעובדים באופן בלעדי עם אייאקס. כל נער מחו"ל מאומץ על ידי משפחה הולנדית, והיא מספקת לו בית חם ומסייעת בקליטתו התרבותית. בנוסף ללימודים כלליים הנערים הזרים לומדים במסגרת המועדון גם הולנדית.  כיום משתתפים בתוכנית גם שחקנים מארגנטינה, מפינלנד וממרוקו, וגם שחקן מכבי חיפה שי בירוק התאמן לאחרונה בנבחרת 1A.
+                                    "בכל שנה רק אחד או שניים מהנערים יצליחו להתקבל כשחקנים בנבחרת הראשונה או השנייה", אומר רונר ומדגיש שבהכשרת הכדורגלנים כרוכים גם אימונים מנטליים רבים. "התוצאות מדברות בעד עצמן", הוא מתגאה. "כיום עשרה מ־22 שחקני הקבוצה הבוגרת הם מהאקדמיה, ורוב המאמנים באקדמיה הם שחקני עבר של אייאקס. למאמן יש תפקיד חשוב בהכשרת שחקן העתיד. הוא גם דמות אב מחבק וגם איש קשוח ותובעני".
+                                    השנה לומדים באקדמיה 203 ילדים ונערים, בהם תשעים בגילאי 8־12. רונר מסרב לאפשר לנו לראיין תלמיד צעיר. "אנחנו לא מטפחים כוכבי תקשורת, ואנו נגד מתן עדיפות לילד זה או אחר. הם צריכים להיות כוכבים על המגרש".               </p>
+
+                                <img class="pic center" src="../images/ourhistorypic10.jpg">
+
+                                <figcaption class="description"> נערים מתאמנים ב"אקדמיית העתיד" של אייאקס. מאמנים מכל העולם באים ללמוד על תוכנית העבודה הייחודית של האקדמיה 
+                                </figcaption>
+
+                            </div>
+                        </div>
+                    </main>
+
+                    <script>
+                        function openCity(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+
+
+
+                        function serchBarFunction() {
+                            var input, filter, table, tr, td, i, txtValue;
+                            input = document.getElementById("myInput");
+                            filter = input.value.toUpperCase();
+                            table = document.getElementById("ajax2020tables1");
+                            tr = table.getElementsByTagName("tr");
+                            for (i = 0; i < tr.length; i++) {
+                                td = tr[i].getElementsByTagName("td")[1];
+                                if (td) {
+                                    txtValue = td.textContent || td.innerText;
+                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        tr[i].style.display = "";
+                                    } else {
+                                        tr[i].style.display = "none";
+                                    }
+                                }       
+                            }
+                        }
+
+                    </script>
+
+                    <!-------------- footer ----------------------->
+                    <footer class="footer" id="footerus">
+                        <hr class="hrborder">
+                        <!-- Footer -->
+                        <footer class="page-footer font-small special-color-dark pt-4my">
+                            <!-- Footer Elements -->
+                            <div class="container-fluid">
+                                <!-- Social buttons -->
+                                <ul class="list-unstyled list-inline text-center">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.facebook.com/AjaxIsrael/    " class="fa fa-facebook"></a>
+                                        <!--Twitter-->
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.youtube.com/user/ajax/videos?app=desktop" class="fa fa-youtube"></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.instagram.com/afcajax/" class="fa fa-instagram"></a>
+                                    </li>
+                                </ul>
+                                <!-- Social buttons -->
+
+                            </div>
+                            <!-- Footer Elements -->
+
+                            <!-- Copyright -->
+                            <div class="footer-copyright text-center py-3">© <b>2020 Copyright:Roey Fredi, Ben Gutgold and Or Cohen</b>
+                            </div>
+                            <!-- Copyright -->
+
+                        </footer>
+                        <!-- Footer -->
+                    </footer>
+                </div>
+            </body>
+
+        </html>

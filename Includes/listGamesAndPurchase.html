@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Required meta tags
+-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- connect to css file -->
+        <link rel="stylesheet" href="../CSS/styleListGamesAndPurchase.css">
+
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Ajax Amsterdam fans website</title>
+    </head>
+
+    <body>
+
+        <header id="nav-bar">
+            <img src="../images/navbarbackg.jpg" class="headerp">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <!-- navbar-nav mx-auto -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="העמוד בשיפוצים">התחברות</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="theClub.html">המועדון</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheTravelGuide.html">המדריך למטייל</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">עמוד הבית</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-------------- section ----------------------->
+        <div class="test">
+            <main>
+
+                <h3 class="titlepage">משחקים קרובים ורכישת כרטיס</h3>
+
+                <hr class="hrborder">
+
+                <div class="col-md-12">
+
+                    <div class="image">
+                        <img id="testImg" src="../images/listGame2.jpg">
+                    </div>
+
+                    <div class="titleg">
+                        <h5>אייאקס-יובנטוס</h5><br>
+                    </div>
+                    <div class="description">
+                        <p><b>שלב הבתים, ליגת האלופות</b><br>
+                            <b>איצטדיון:</b> אמסטרדם ארנה, <b>1.2.20</b><br>
+                            <b>מחיר:</b>180€</p>
+                        <p class="info">חשוב לדעת! הכרטיסים למשחק שמוצעים באתר נמכרים לשער האולטרס של אוהדי אייקס אמסטרדם שמאחורי השער המזרחי</p>
+                    </div>
+                    <button type="button" class="btnP" onclick="myFunctionP()"><b><u>!לרכישת כרטיס למשחק לחץ כאן</u></b></button>
+                </div>  
+
+                <div class="col-md-12" id="purchase">
+
+                    <div class="row">
+                        <div class="col-75">
+                            <div class="container">
+                                <form name="applyForm" >
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <h3>הזמנת כרטיס למשחק</h3>
+                                            <label for="fname"><i class=""></i> שם מלא</label>
+                                            <input type="text" id="fname" name="firstname"  placeholder="שם מלא" required >
+                                            <label for="email"><i class=""></i> איימיל </label>
+                                            <input type="text" id="email" name="email" placeholder="Ajax@example.com">
+                                            <label for="adr"><i class=""></i> כתובת </label>
+                                            <input type="text" id="adr" name="address"  placeholder="הכנס כתובת">
+                                            <label for="city"><i class=""></i> עיר</label>
+                                            <input type="text" id="city" name="city" placeholder="הכנס עיר">
+
+
+
+
+
+
+                                            <label for="cname">שם בעל הכרטיס</label>
+                                            <input type="text" id="cname" name="cardname" placeholder="הכנס שם בעל הכרטיס">
+                                            <label for="ccnum">מספר כרטיס אשראי</label>
+                                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" >
+                                            <label for="expmonth">תוקף:חודש</label>
+                                            <input type="text" id="expmonth" name="expmonth" placeholder="הכנס חודש" >
+
+                                            <div class="row">
+                                                <div class="col-50">
+                                                    <label for="expyear">תוקף:שנה</label>
+                                                    <input type="text" id="expyear" name="expyear" placeholder="הכנס שנה">
+                                                </div>
+                                                <div class="col-50">
+                                                    <label for="cvv">CVV</label>
+                                                    <input type="text" id="cvv" name="cvv" placeholder="הכנס CCV">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <input type="button" value="לחץ כאן לביצוע הזמנה" class="btnP" id="btnP" onclick="myFunctionPurchase()">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <hr class="hrborder">
+
+
+                <div class="col-md-12">
+
+                    <div class="image">
+                        <img id="testImg" src="../images/listGame1.jpg">
+                    </div>
+
+                    <div class="titleg">
+                        <h5>אייאקס-צ'לסי</h5><br>
+                    </div>
+                    <div class="description">
+                        <p><b>שלב הבתים, ליגת האלופות</b><br>
+                            <b>איצטדיון:</b> אמסטרדם ארנה, <b>15.2.20</b><br>
+                            <b>מחיר:</b>180€</p>
+                        <p class="info">חשוב לדעת! הכרטיסים למשחק שמוצעים באתר נמכרים לשער האולטרס של אוהדי אייקס אמסטרדם שמאחורי השער המזרחי</p>
+                    </div>
+                    <button type="button" class="btnP" onclick="myFunction()" title="רכישה לא זמינה"><b><u>!לרכישת כרטיס למשחק לחץ כאן</u></b></button>
+
+                </div> 
+
+                <hr class="hrborder">
+
+
+
+                <div class="col-md-12">
+
+                    <div class="image">
+                        <img id="testImg" src="../images/listGame3.jpg">
+                    </div>
+
+                    <div class="titleg">
+                        <h5>אייאקס-ריאל מדריד</h5><br>
+                    </div>
+                    <div class="description">
+                        <p><b>שלב הבתים, ליגת האלופות</b><br>
+                            <b>איצטדיון:</b> אמסטרדם ארנה, <b>29.2.20</b><br>
+                            <b>מחיר:</b>180€</p>
+                        <p class="info">חשוב לדעת! הכרטיסים למשחק שמוצעים באתר נמכרים לשער האולטרס של אוהדי אייקס אמסטרדם שמאחורי השער המזרחי</p>
+                    </div>
+                    <button type="button" class="btnP" onclick="myFunction()" title="רכישה לא זמינה"><b><u>!לרכישת כרטיס למשחק לחץ כאן</u></b></button>
+
+                </div> 
+
+
+
+
+
+                <script>
+                    function myFunction() {
+                        alert("הרכישה לא זמינה כעת, הרכישה תפתח שבוע לפני תאריך המשחק");
+                    }
+                    function myFunctionP(){
+                        var purchase=document.getElementById("purchase");
+                        if(purchase.style.display=="none"){
+                            purchase.style.display="block";
+                        }
+                        else{
+                            purchase.style.display="none";
+                        }
+                    }
+                    function myFunctionPurchase(){
+                        var nameValidation = document.forms["applyForm"]["firstname"].value;
+
+                        var emailValidation = document.forms["applyForm"]["email"].value;
+
+                        var addressValidation = document.forms["applyForm"]["address"].value;
+
+                        var cityValidation = document.forms["applyForm"]["city"].value;
+
+                        var cardNameValidation = document.forms["applyForm"]["cardname"].value;
+
+                        var cardNumberValidation = document.forms["applyForm"]["cardnumber"].value;
+
+                        var expMonthValidation = document.forms["applyForm"]["expmonth"].value;
+
+                        var expYearValidation = document.forms["applyForm"]["expyear"].value;
+
+                        var cvvValidation = document.forms["applyForm"]["cvv"].value;
+
+
+                        if (  nameValidation == "" || emailValidation == ""|| addressValidation == "" || cityValidation == "" || cardNameValidation == "" || cardNumberValidation == "" || expMonthValidation == "" || expYearValidation == "" || cvvValidation == ""){
+                            alert("אנא מלא את כל השדות בטופס");
+                            return false;
+                        }
+                        else{
+
+                            alert("הרכישה בוצעה בהצלחה, פרטי ההזמנה ישלחו למייל!");
+                            window.location.href = "../index.html";
+                            return true;
+                        }
+
+                    }
+
+                </script>
+
+
+
+            </main>
+            <!-------------- footer ----------------------->
+            <footer class="footer" id="contactus">
+
+                <hr class="hrborder">
+                <!-- Footer -->
+                <footer class="page-footer font-small special-color-dark pt-4my">
+                    <!-- Footer Elements -->
+                    <div class="container-fluid">
+                        <!-- Social buttons -->
+                        <ul class="list-unstyled list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/AjaxIsrael/    " class="fa fa-facebook"></a>
+                                <!--Twitter-->
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/user/ajax/videos?app=desktop" class="fa fa-youtube"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/afcajax/" class="fa fa-instagram"></a>
+                            </li>
+                        </ul>
+                        <!-- Social buttons -->
+
+                    </div>
+                    <!-- Footer Elements -->
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© <b>2020 Copyright:Roey Fredi, Ben Gutgold and Or Cohen</b>
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
+            </footer>
+        </div>
+    </body>
+
+</html>
